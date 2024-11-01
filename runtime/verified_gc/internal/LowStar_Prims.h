@@ -2,6 +2,7 @@
 #define __internal_LowStar_Prims_H
 
 #include "alias.h"
+#include <stdint.h>
 
 extern krml_checked_int_t Prims_op_Subtraction(krml_checked_int_t x,
                                                krml_checked_int_t y);

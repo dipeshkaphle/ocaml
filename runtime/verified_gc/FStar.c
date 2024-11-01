@@ -1,5 +1,3 @@
-#include "internal/FStar.h"
-
 /* Prims_int FStar_UInt32_v(uint32_t x) { /\* if (x >) *\/ */
 /*   return x; */
 /* } */

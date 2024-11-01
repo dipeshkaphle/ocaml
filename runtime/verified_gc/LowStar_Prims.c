@@ -1,5 +1,6 @@
 #include "internal/LowStar_Prims.h"
 
+// NOTE: Handwritten
 // TODO: Not doing any checked arithmetics
 extern krml_checked_int_t Prims_op_Subtraction(krml_checked_int_t x,
                                                krml_checked_int_t y) {

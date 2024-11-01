@@ -6,10 +6,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// NOTE: All of this is handwritten
+//
+// Hacks to make sure everything operates in 64 bits(this has to be done due to
+// Low* limitations in codegen)
+
 #define Prims_int uint64_t
 
-// Hack to make sure everything operates in 64 bits(this has to be done due to
-// Low* limitations in codegen)
 #define uint32_t uint64_t
 
 #define krml_checked_int_t uint64_t
@@ -20,6 +23,7 @@
 #define KRML_HOST_MALLOC(bytes) malloc(bytes)
 #define KRML_HOST_FREE(ptr) free(ptr)
 #define KRML_HOST_CALLOC(nelems, elem_size) calloc(nelems, elem_size)
+#define KRML_MAYBE_UNUSED_VAR(ignored)
 
 #define load64_le(ptr) (*(uint64_t *)(ptr))
 #define store64_le(ptr, value)                                                 \
